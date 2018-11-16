@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "extension name"
+  },
+  "appDesc": {
+    "message": "extension description"
+  },
+  "appBrowserActionDefaultTitle": {
+    "message": "extension title"
+  }
+}

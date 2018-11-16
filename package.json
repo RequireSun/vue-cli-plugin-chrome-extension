@@ -1,0 +1,34 @@
+{
+  "name": "vue-cli-plugin-chrome-extension",
+  "version": "0.0.1",
+  "description": "A vue-cli plugin for create chrome extension project",
+  "keywords": [
+    "chrome",
+    "extension",
+    "vue",
+    "vue-cli",
+    "plugin",
+    "vue-cli-plugin"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RequireSun/vue-cli-plugin-chrome-extension.git"
+  },
+  "author": {
+    "name": "RequireSun",
+    "email": "kelvinsen#outlook.com",
+    "url": "https://github.com/RequireSun"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RequireSun/vue-cli-plugin-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/RequireSun/vue-cli-plugin-chrome-extension#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0"
+  }
+}
