@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-chrome-extension",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "A vue-cli plugin for create chrome extension project",
   "keywords": [
     "chrome",
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/RequireSun/vue-cli-plugin-chrome-extension#readme",
   "devDependencies": {
-    "copy-webpack-plugin": "^4.6.0"
+    "copy-webpack-plugin": "^4.6.0",
+    "fs-extra": "^7.0.1"
   }
 }
