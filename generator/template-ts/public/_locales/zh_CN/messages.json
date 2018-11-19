@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "插件名称"
+  },
+  "appDesc": {
+    "message": "插件介绍"
+  },
+  "appBrowserActionDefaultTitle": {
+    "message": "插件 title"
+  }
+}

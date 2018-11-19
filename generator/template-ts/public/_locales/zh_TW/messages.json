@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "應用名稱"
+  },
+  "appDesc": {
+    "message": "應用介紹"
+  },
+  "appBrowserActionDefaultTitle": {
+    "message": "應用 title"
+  }
+}

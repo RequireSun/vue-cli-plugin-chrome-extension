@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-chrome-extension",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A vue-cli plugin for create chrome extension project",
   "keywords": [
     "chrome",

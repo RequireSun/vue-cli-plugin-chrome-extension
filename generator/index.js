@@ -1,10 +1,11 @@
 'use strict';
 
-// const fs = require('fs');
 const fs = require('fs-extra');
 const path = require('path');
 
-module.exports = (api, options, rootOptions) => {
+module.exports = (api, {
+    language = 'javascript',
+}, rootOptions) => {
     api.extendPackage({
         devDependencies: {
             "copy-webpack-plugin": "^4.0.0",
@@ -12,24 +13,19 @@ module.exports = (api, options, rootOptions) => {
     });
 
     const indexPath = path.resolve(process.cwd(), 'public' + path.sep + 'index.html');
+    const srcPath = path.resolve(process.cwd(), 'src');
+    // 删掉 public/index.html, 因为用不到
+    fs.remove([
+        indexPath,
+        srcPath,
+    ]);
 
-    fs.remove(indexPath);
-
-    api.render('./template');
-
-    // fs.lstat(indexPath, (...args) => {
-    //     if (args[0]) {
-    //         // do nothing
-    //     }
-    //     console.log('lstat', args);
-    // });
-    //
-    // fs.unlink(indexPath, (err) => {
-    //     if (err) {
-    //         // do nothing
-    //         console.log('remove file fail', err);
-    //     } else {
-    //         console.log('remove file success', indexPath);
-    //     }
-    // });
+    switch (language) {
+        case 'typescript':
+            api.render('./template-ts');
+            break;
+        case 'javascript':
+            api.render('./template');
+            break;
+    }
 };
